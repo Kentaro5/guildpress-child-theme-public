@@ -1,0 +1,63 @@
+/*ウィジェット部分*/
+.b-radius {
+  border-radius: 16px;
+}
+
+
+.widget-box {
+
+}
+
+.widget-detail-box {
+  padding: 8px 16px;
+}
+
+.widget-detail-box .center img.user-profile-img-card {
+  margin-top: 16px;
+}
+
+.widget-title {
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 2px solid $gp-main-color;
+  margin-top: 32px;
+  padding: 8px;
+}
+
+.user-progress-box {
+  background-color: $smork-white;
+  padding: 8px;
+}
+
+.user-progress-box .b-radius {
+  margin-bottom: 8px;
+}
+
+.prfoile-widget p {
+  color: $calendar-border;
+}
+
+.widget-detail-lesson-top {
+  margin-top: 24px;
+}
+
+.widget-detail-lesson {
+  border-bottom: 1px solid $light-bold-gray;
+  margin-bottom: 24px;
+}
+
+.widget-detail-lesson:last-child {
+  margin-bottom: 10px;
+}
+
+.lesson-list-detail-desc-box {
+}
+
+.lesson-list-detail-desc-box h2 {
+}
+
+.post-lists {
+  margin-bottom: 24px;
+}
+
+/*ウィジェット部分*/

@@ -1,0 +1,124 @@
+
+
+/*一般設定*/
+body{
+  line-height: 1.8;
+  word-wrap: break-word;
+}
+h2{
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.bkg-white{
+  width: 100%;
+  background: $white;
+}
+.posts-lists-link{
+  color:$black;
+  text-decoration: none;
+}
+
+.posts-lists-link .single-post-box{
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-transition: all 0.218s;
+  -moz-transition: all 0.218s;
+  -webkit-transition: all 0.218s;
+  transition: all 0.218s;
+}
+.posts-lists-link:hover{
+  text-decoration:none !important;
+}
+.posts-lists-link .single-post-box:hover{
+  background-color: $white;
+  color: $black;
+  text-decoration: none;
+}
+
+.flex-eq-height{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+.mb48{
+  margin-bottom: 48px;
+}
+
+.mt0{
+  margin-top:0px;
+}
+
+
+.posts-link-text{
+  color: $black;
+  font-weight: bold;
+}
+
+.pb0{
+  padding-bottom: 0px;
+}
+
+.main-color{
+  background-color: $gp-main-color;
+}
+
+.mb0{
+  margin-bottom:0px;
+}
+
+.center{
+  text-align: center;
+}
+
+.ml-15{
+  margin-left: -15px;
+}
+
+.content-box{
+  margin: 0 auto;
+  @include max-screen( $max-sm-media ) {
+    width: 100%;
+    margin-bottom:32px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    //width: 708px;
+    width: 100%;
+    margin-bottom:48px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    //width: 820px;
+    width: 100%;
+    margin-bottom:48px;
+  }
+
+  @include min-screen($min-pc-media) {
+    width: 1100px;
+    margin-bottom:48px;
+  }
+}
+
+.content-box.mb0{
+    margin-bottom:0px
+}
+
+.content-box.post-lists {
+  margin-bottom:24px
+}
+
+.progress{
+  border-radius: 50px;
+}
+
+.page-box {
+  padding: 16px 24px;
+  margin-bottom: 48px;
+}
+
+
+/*一般設定*/

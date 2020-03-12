@@ -1,0 +1,35 @@
+/*登録フォーム部分*/
+#guild_press_register_form {
+  background: $white;
+  margin: 0 auto;
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+  @include max-screen($max-sm-media) {
+    padding: 8px 16px;
+    width: 100%;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    padding: 16px 24px;
+    width: 500px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    padding: 16px 24px;
+    width: 600px;
+  }
+
+  @include min-screen($min-pc-media) {
+    padding: 16px 24px;
+    width: 600px;
+  }
+}
+
+#guild_press_register_form #payment-form .form-group input.btn_design {
+  width: 100%;
+}
+
+.form-group .form-input {
+  width: 100%;
+}
+
+/*登録フォーム部分*/

@@ -1,0 +1,192 @@
+/*トグルナビゲーション*/
+
+#gnavi {
+  margin: 0;
+  padding: 0;
+}
+
+#gnavi:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#gnavi ul {
+  float: left;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  z-index: 10;
+}
+
+#gnavi ul#menu-head-menu li.menu-item {
+  margin: 0px;
+  display: inline-block;
+  float: left;
+  background-color: $gp-main-color;
+
+  @include max-screen( $max-sm-media ) {
+    font-size: 18px;
+    width: 100%;
+  }
+
+}
+
+#gnavi ul#menu-head-menu li.menu-item a {
+  display: block;
+  padding: 28px 20px;
+  color: $white;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 0px;
+}
+
+#gnavi ul#menu-head-menu li.menu-item a:hover,
+#gnavi ul#menu-head-menu li.menu-item ul.sub-menu li.menu-item a:hover,
+#gnavi ul#menu-head-menu li.menu-item ul.sub-menu li.menu-item ul.sub-menu li.menu-item a:hover {
+  color: $gp-main-color;
+  background: $white;
+}
+
+/* Hide Dropdowns by Default */
+#gnavi ul#menu-head-menu li.menu-item ul.sub-menu{
+
+  /* has to be the same number as the "line-height" of "nav a" */
+}
+
+
+#gnavi ul#menu-head-menu li.menu-item ul.sub-menu {
+  display: none;
+  position: absolute;
+  /* has to be the same number as the "line-height" of "a" */
+  top: 80px;
+  @include max-screen( $max-sm-media ) {
+    float: none;
+    position: static;
+    color: #ffffff;
+  }
+}
+
+/* Display Dropdowns on Hover */
+#gnavi ul#menu-head-menu li.menu-item:hover > ul.sub-menu {
+
+  display: inherit;
+  @include max-screen( $max-sm-media ) {
+    display:none;
+  }
+}
+
+/* Hide menus on hover */
+#gnavi ul#menu-head-menu li.menu-item ul.sub-menu li.menu-item:hover > ul.sub-menu {
+  @include max-screen( $max-sm-media ) {
+    display:none;
+  }
+}
+
+
+
+#gnavi ul#menu-head-menu li.menu-item ul.sub-menu li.menu-item a {
+  background-color: $gp-main-bold-color;
+  padding: 28px 18px;
+
+  @include max-screen( $max-sm-media ) {
+    padding: 0 40px;
+  }
+}
+
+#gnavi ul#menu-head-menu li.menu-item ul.sub-menu li.menu-item ul.sub-menu li.menu-item a{
+  @include max-screen( $max-sm-media ) {
+    padding: 0 80px;
+  }
+}
+
+#gnavi ul#menu-head-menu li.menu-item ul.sub-menu li.menu-item a,
+#gnavi ul#menu-head-menu li.menu-item ul.sub-menu li.menu-item ul.sub-menu li.menu-item a{
+  @include max-screen( $max-sm-media ) {
+    padding: 14px 20px;
+    color: #FFF;
+    font-size: 17px;
+    margin-bottom:2px;
+    box-shadow: 0px 2px 8px -3px hsla(0,0%,0%,0.6);
+    -webkit-box-shadow: 0px 2px 8px -3px hsla(0,0%,0%,0.6);
+    -moz-box-shadow: 0px 2px 8px -3px hsla(0,0%,0%,0.6);
+  }
+}
+
+#gnavi ul#menu-head-menu li.menu-item a {
+  @include max-screen( $max-sm-media ) {
+    margin-bottom: 2px;
+    box-shadow: 0px 2px 8px -3px hsla(0, 0%, 0%, 0.6);
+    -webkit-box-shadow: 0px 2px 8px -3px hsla(0, 0%, 0%, 0.6);
+    -moz-box-shadow: 0px 2px 8px -3px hsla(0, 0%, 0%, 0.6);
+  }
+}
+
+
+
+/* Fisrt Tier Dropdown */
+#gnavi ul#menu-head-menu li.menu-item ul.sub-menu li.menu-item {
+  width: 200px;
+  float: none;
+  display: list-item;
+  position: relative;
+  @include max-screen( $max-sm-media ) {
+    width: 100%;
+  }
+}
+
+/* Fisrt Tier Dropdown */
+#gnavi ul#menu-head-menu li.menu-item ul.sub-menu,
+#gnavi ul#menu-head-menu li.menu-item ul.sub-menu li.menu-item ul.sub-menu{
+  @include max-screen( $max-sm-media ) {
+    width: 100%;
+  }
+}
+
+
+#gnavi ul#menu-head-menu li.menu-item ul.sub-menu li.menu-item ul.sub-menu li.menu-item {
+  position: relative;
+  top: -80px;
+  /* has to be the same number as the "width" of "nav ul ul li" */
+  left: 200px;
+  @include max-screen( $max-sm-media ) {
+    position: static;
+  }
+}
+
+/* Change ' ▼' in order to change the Dropdown symbol */
+#gnavi ul#menu-head-menu li.menu-item > a:after {
+  content: ' ▼';
+}
+
+#gnavi ul#menu-head-menu li.menu-item > a:only-child:after {
+  content: '';
+}
+
+
+#gnavi ul#menu-head-menu li.menu-item ul.sub-menu li.menu-item ul.sub-menu li.menu-item a {
+  background-color: $gp-main-dark-color;
+}
+
+.toggle + a,
+.menu {
+  display: none;
+}
+
+
+/* Display Dropdown when clicked on Parent Lable */
+[id^=drop]:checked + ul {
+  @include max-screen( $max-sm-media ) {
+    display: block;
+  }
+}
+
+nav#gnavi ul li {
+  @include max-screen( $max-sm-media ) {
+    display: block;
+    width: 100%;
+  }
+}
+
+/*トグルナビゲーション*/

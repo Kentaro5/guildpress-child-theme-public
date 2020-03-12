@@ -1,0 +1,94 @@
+
+/*pdf-slider部分*/
+#gp-texts-docs-canvas-box{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gp-back-black-right{
+  right: 0;
+  left: auto;
+  background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+  background-image: -o-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+  background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.5)));
+  background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+  background-repeat: repeat-x;
+}
+
+.gp-back-black-left{
+  background-image: -webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+  background-image: -o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+  background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001)));
+  background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+  background-repeat: repeat-x;
+}
+
+.gp-texts-docs-left{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  color: $white;
+  text-align: center;
+  text-shadow: 0 1px 2px $text-shadow-black;
+  filter: alpha(opacity=50);
+  opacity: .5;
+  width: 40%;
+}
+
+.gp-texts-docs-right{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  color: $white;
+  text-align: center;
+  text-shadow: 0 1px 2px $text-shadow-black;
+  filter: alpha(opacity=50);
+  opacity: .5;
+  width: 40%
+}
+
+.gp-arrow-position-left,.go-arrow-position-right{
+  position: absolute !important;
+  top: 45% !important;
+  z-index: 5;
+  display: inline-block;
+  @include max-screen($max-sm-media) {
+    font-size: 40px;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    font-size: 100px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    font-size: 100px;
+  }
+
+  @include min-screen($min-pc-media) {
+    font-size: 100px;
+  }
+}
+
+.gp-arrow-position-left{
+  left:0;
+}
+
+
+.go-arrow-position-right{
+  right:0;
+}
+
+#gp-prev,#gp-next,#the-canvas{
+  width: 100%;
+  height: 100%;
+}
+
+#gp-prev,#gp-next{
+  display: none;
+}
+/*pdf-slider部分*/

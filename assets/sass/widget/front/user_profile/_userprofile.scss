@@ -1,0 +1,75 @@
+
+
+/*ユーザープロフィール*/
+.profile-img-box{
+
+}
+.user-profile-box{
+  background-color: $gray-background-color;
+
+  @include max-screen( $max-sm-media ) {
+    padding:32px 40px;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    padding:56px 48px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    padding:56px 48px;
+  }
+
+  @include min-screen( $min-pc-media ) {
+    padding: 56px 48px 20px;
+  }
+}
+
+.user-profile-img-card{
+
+    width: 96px;
+    height: 96px;
+    display: block;
+    margin: 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+.profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+
+}
+
+.profile-user-name{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom:0px;
+
+}
+
+
+.progress-box{
+  @include max-screen( $max-sm-media ) {
+    margin-bottom: 14px;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    margin-bottom: 24px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    margin-bottom: 24px;
+  }
+
+  @include min-screen( $min-pc-media ) {
+    margin-bottom: 24px;
+  }
+}
+
+/*ユーザープロフィール*/

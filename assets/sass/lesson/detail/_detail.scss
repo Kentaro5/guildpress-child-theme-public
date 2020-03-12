@@ -1,0 +1,248 @@
+/*レッスンページ詳細部分*/
+
+.page-lesson-detail-box {
+  margin-top: 48px;
+}
+
+.page-lesson-detail-box img {
+  width: 100%;
+  height: auto;
+}
+
+.page-lesson-detail-box iframe {
+
+  width: 100%;
+}
+
+
+.page-lesson-detail-box h2 {
+  background-color: #275e9d;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 32px;
+  margin-bottom: 26px;
+  padding: 12px 16px;
+
+}
+
+.page-lesson-detail-box h3 {
+  font-weight: bold;
+  border-bottom: 2px solid $gp-main-color;
+  margin-top: 32px;
+  padding: 8px;
+  @include max-screen($max-sm-media) {
+    font-size: 16px;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    font-size: 20px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    font-size: 20px;
+  }
+
+  @include min-screen($min-pc-media) {
+    font-size: 20px;
+  }
+}
+
+.page-lesson-detail-box p {
+  margin-bottom: 24px;
+}
+
+.dwd_background {
+  text-align: center;
+  background: $gp-main-color;
+  color: $white;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-transition: all 0.218s;
+  -moz-transition: all 0.218s;
+  -webkit-transition: all 0.218s;
+  transition: all 0.218s;
+  border: 1px solid $gp-main-color;
+
+  @include max-screen($max-sm-media) {
+    padding: 8px 16px;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 16px 24px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    //margin-left: 40px;
+    //margin-right: 40px;
+    padding: 16px 24px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  @include min-screen($min-pc-media) {
+    //margin-left: 40px;
+    //margin-right: 40px;
+    padding: 16px 24px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+
+.lesson_btn_box {
+  text-align: center;
+  margin-top: 32px;
+
+}
+
+.lesson_btn_box button {
+  margin-right: 30px;
+}
+
+#send_quiz_answer_btn {
+  margin-right: 30px;
+}
+
+.lesson_btn_box .btn_design, .form-submit .btn_design, .btn_design, .btn_comp_design {
+  border: none;
+  /*pointer-events: none;*/
+  background-color: $gp-main-color;
+  color: $white;
+  padding: 10px 40px;
+  border: 1px solid $gp-main-color;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-transition: all 0.218s;
+  -moz-transition: all 0.218s;
+  -webkit-transition: all 0.218s;
+  transition: all 0.218s;
+
+  @include max-screen($max-sm-media) {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  @include min-screen($min-pc-media) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+
+.dwd_background:hover, .lesson_btn_box .btn_design:hover, .form-submit .btn_design:hover, .btn_design:hover, .btn_comp_design {
+  background: $white;
+  color: $gp-main-color;
+  text-decoration: none;
+  border: 1px solid $gp-main-color;
+}
+
+.lesson_btn_box .btn_comp_design {
+  border: none;
+  pointer-events: none;
+  background-color: $white;
+  color: $gp-main-color;
+  border: 1px solid $gp-main-color;
+  padding: 10px 40px;
+  @include max-screen($max-sm-media) {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 300px;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  @include min-screen($min-pc-media) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.form-submit {
+  text-align: center;
+}
+
+.area_forum {
+  margin-bottom: 24px;
+  padding: 20px 16px;
+  padding-bottom: 40px;
+  background-color: $smork-white;
+  cursor: pointer;
+}
+
+.list_head.js-acordion-action p {
+  margin-bottom: 0px;
+  font-weight: bold;
+  @include max-screen($max-sm-media) {
+    font-size: 16px;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    font-size: 20px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    font-size: 18px;
+  }
+
+  @include min-screen($min-pc-media) {
+    font-size: 20px;
+  }
+}
+
+.qna-btn {
+  float: right;
+  font-size: 20px;
+}
+
+p.qna-title {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid $black;
+}
+
+.list_body p, .list_body p span {
+  font-weight: bold;
+}
+
+
+.area_forum.first_comment {
+  padding-bottom: 16px;
+}
+
+.area_forum.first_comment:last-child {
+  margin-bottom: 48px;
+}
+
+.area_forum:last-child {
+  @include screen($min-middle-media, $max-middle-media) {
+    margin-bottom: 48px;
+  }
+}
+
+/*レッスンページ詳細部分*/

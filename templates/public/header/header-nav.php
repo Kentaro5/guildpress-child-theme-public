@@ -1,0 +1,1 @@
+<?php get_template_part( '/templates/public/nav-menu/nav-menu-normal' ); ?>

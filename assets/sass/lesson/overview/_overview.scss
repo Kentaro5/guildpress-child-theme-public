@@ -1,0 +1,293 @@
+/*レッスンページ概要部分*/
+.page-overview-box {
+  /*background:linear-gradient(to right, #E1E1EF, #CEE6F0);*/
+  @include max-screen($max-sm-media) {
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    padding-top: 48px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    padding-top: 48px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  @include min-screen($min-pc-media) {
+    padding-top: 48px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+  padding-bottom: 0px;
+  margin-top: -48px;
+}
+
+.page-title {
+  font-weight: bold;
+  @include max-screen($max-sm-media) {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    font-size: 32px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    font-size: 32px;
+  }
+
+  @include min-screen($min-pc-media) {
+    font-size: 32px;
+  }
+}
+
+.lesson-detail-box {
+  @include max-screen($max-sm-media) {
+    margin-bottom: 24px;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    margin-bottom: 48px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    margin-bottom: 48px;
+  }
+
+  @include min-screen($min-pc-media) {
+    margin-bottom: 48px;
+  }
+}
+
+.lesson-label-parts {
+  background: $label-black;
+  color: $white;
+  padding: 8px 40px;
+  @include max-screen($max-sm-media) {
+    margin-right: 20px;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    margin-right: 30px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    margin-right: 30px;
+  }
+
+  @include min-screen($min-pc-media) {
+    margin-right: 30px;
+  }
+}
+
+.lesson-box {
+  padding-bottom: 0px;
+}
+
+.lesson-list-box {
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+  @include min-screen($min-pc-media) {
+    background: $white;
+    margin: 40px auto;
+  }
+}
+
+.row.display-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  display: flex;
+
+  @include max-screen($max-sm-media) {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    width: 100%;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    width: 100%;
+  }
+
+  @include min-screen($min-pc-media) {
+    width: 100%;
+  }
+}
+
+.lesson_link {
+  color: $black;
+  text-decoration: none;
+}
+
+.lesson_link:hover {
+  text-decoration: none;
+}
+
+.lesson-list-status {
+  @include max-screen($max-sm-media) {
+    margin-top: 30px;
+    margin-bottom: 1px;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    font-size: 14px;
+    padding: 5px 20px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    margin-top: 30px;
+    margin-bottom: 1px;
+  }
+
+  @include min-screen($min-pc-media) {
+    margin-top: 30px;
+    margin-bottom: 1px;
+  }
+}
+
+.lesson-list-status-complete-label, .lesson-list-status-label {
+  font-size: 14px;
+  color: $white;
+  font-size: 14px;
+  padding: 5px 20px;
+
+}
+
+.lesson-list-status-label {
+  background: $label-black;
+}
+
+.lesson-list-status-complete-label {
+  background: $red;
+  font-size: 14px;
+}
+
+.lesson-list-detail-box {
+  border: 1px solid $gray;
+  padding: 16px 24px;
+  padding-left: 32px;
+}
+
+.lesson-list-detail-box:last-child {
+  margin-bottom: 20px;
+}
+
+.lesson-list-detail-num-box {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 10px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: $gp-main-color;
+  color: $white;
+}
+
+.lesson-list-detail-num-box p {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-top: 15px;
+  margin-bottom: 8px;
+
+  @include max-screen($max-sm-media) {
+    padding-top: 15px;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    padding-top: 15px;
+  }
+}
+
+.lesson-list-detail-desc-box h2 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 0px;
+  //margin-bottom: 16px;
+  margin-bottom: 5px;
+}
+
+.lesson-list-detail-desc-box p {
+  margin-bottom: 0px;
+  font-size: 14px;
+  color: $light-bold-gray;
+}
+
+.lesson-bg-lock {
+  position: relative;
+  background-color: $ice-white;
+  opacity: 0.5;
+}
+
+.icon-lock-side-bar {
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 50px;
+}
+
+.icon_lock {
+  position: absolute;
+  -webkit-transform: translateX(-45%);
+  -moz-transform: translateX(-45%);
+  transform: translateX(-45%);
+  -webkit-transform: translateY(-45%);
+  -moz-transform: translateY(-45%);
+  transform: translateY(-45%);
+  left: 45%;
+  top: 50%;
+  font-size: 100px;
+}
+
+.page-overview-box{
+  @include max-screen($max-sm-media) {
+    margin-top: -48px;
+    padding:48px;
+    padding-bottom: 0px;
+  }
+}
+
+.page-detail-box{
+}
+
+.detail-page-title{
+  @include max-screen($max-sm-media) {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 40px;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+  @include min-screen($min-pc-media) {
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+}
+/*レッスンページ概要部分*/

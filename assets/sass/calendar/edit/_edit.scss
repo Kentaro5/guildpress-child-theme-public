@@ -1,0 +1,104 @@
+/*カレンダー編集フォーム部分*/
+.form-box {
+  margin: 0px auto;
+  @include max-screen($max-sm-media) {
+    width: 300px;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    width: 600px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    width: 600px;
+  }
+
+  @include min-screen($min-pc-media) {
+    width: 600px;
+  }
+}
+
+.form-title {
+  margin-top:0px;
+  margin-bottom: 32px;
+  font-weight: bold;
+}
+
+.form-parts {
+  margin-bottom: 24px;
+}
+
+.form-parts:last-child {
+  margin-bottom: 32px;
+}
+
+.form-text {
+  margin-bottom: 0px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.form-input, .form_textarea {
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: solid 1px $gray;
+
+}
+
+.form-input {
+  @include max-screen($max-sm-media) {
+    width: 300px;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    width: 285px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    width: 285px;
+  }
+
+  @include min-screen($min-pc-media) {
+    width: 285px;
+  }
+}
+
+@include screen($min-middle-media, $max-middle-media) {
+
+  #user-edit-info .form-parts .form-input{
+    width:100%;
+  }
+}
+
+@include min-screen($min-pc-media) {
+  #user-edit-info .form-parts .form-input{
+    width:100%;
+  }
+
+}
+
+.form_textarea {
+  @include max-screen($max-sm-media) {
+    width: 300px;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    width: 590px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    width: 590px;
+  }
+
+  @include min-screen($min-pc-media) {
+    width: 590px;
+  }
+}
+
+.form-btn.btn_design {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+
+/*カレンダー編集フォーム部分*/

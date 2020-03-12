@@ -1,0 +1,33 @@
+/*決済フォーム部分*/
+
+.width100 {
+  width: 100%;
+}
+
+.border_gray {
+  border: 2px solid $light-white;
+}
+
+.p2010 {
+  padding: 20px 10px;
+}
+
+.tbody_default th {
+  border-right: 2px solid $light-white;
+}
+
+.btn_desgin {
+  width: 100%;
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: bold;
+  position: relative;
+  background-color: #275e9d;
+  color: #fff;
+  border-radius: 0.2em;
+  border: none;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .09);
+  transition: 0.3s;
+}
+
+/*決済フォーム部分*/

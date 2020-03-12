@@ -1,0 +1,62 @@
+.wpua-edit {
+  text-align: center;
+
+  .wpua-edit-container {
+    margin-bottom: 32px;
+
+    h3 {
+      margin-bottom: 32px;
+    }
+
+    #wpua-add-button-existing {
+      button {
+        margin-bottom: 16px;
+        width: 280px;
+        @include btn_design();
+
+        &:hover {
+          @include btn_design_hover();
+        }
+      }
+    }
+
+    #wpua-undo-button-existing {
+      button {
+        margin-bottom: 16px;
+        width: 280px;
+        @include btn_design();
+
+        &:hover {
+          @include btn_design_hover();
+        }
+      }
+    }
+
+    #wpua-file-existing {
+      margin: 0 auto;
+      margin-bottom: 24px;
+    }
+
+    #wpua-upload-existing {
+      width: 280px;
+      @include btn_design();
+
+      &:hover {
+        @include btn_design_hover();
+      }
+    }
+  }
+
+
+  .submit {
+    .button {
+      width: 280px;
+      @include btn_design();
+
+      &:hover {
+        @include btn_design_hover();
+      }
+    }
+  }
+
+}

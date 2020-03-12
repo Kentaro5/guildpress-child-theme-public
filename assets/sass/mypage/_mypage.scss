@@ -1,0 +1,67 @@
+/*マイページ部分*/
+.my-page-top {
+  background-color: $gray-background-color;
+  padding: 56px 48px;
+  padding-bottom: 24px;
+  margin-top: 16px;
+  @include max-screen($max-sm-media) {
+    margin-top: -12px;
+  }
+}
+
+.my-page-bottom {
+  background-color: $gray-background-color;
+  padding: 56px 48px;
+  padding-top: 24px;
+}
+
+.my-page-user-title {
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 24px;
+}
+
+.news-post-text, .mypage-user-name {
+  text-align: left;
+  font-weight: bold;
+}
+
+.mypage-user-name {
+  margin-bottom: 0px;
+}
+
+@include screen($min-tablet-media, $max-tablet-media) {
+  .mypage-user-name:last-child {
+    margin-bottom: 24px;
+  }
+}
+
+.mypage-img-box {
+  @include max-screen($max-sm-media) {
+    text-align: center;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    text-align: center;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    text-align: right;
+  }
+
+  @include min-screen($min-pc-media) {
+    text-align: right;
+  }
+}
+
+.mypage-profile-img-card {
+  width: 96px;
+  height: 96px;
+  margin-right: 24px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+/*マイページ部分*/

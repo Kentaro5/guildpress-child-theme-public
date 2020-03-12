@@ -1,0 +1,155 @@
+/*フッターウィジェットエリア*/
+.footer-widgets-container {
+  margin-bottom: 32px;
+  @include min-screen($min-pc-media) {
+    padding: 8px 16px;
+  }
+}
+
+.footer-container {
+  background-color: $gp-main-color;
+
+  @include max-screen($max-sm-media) {
+    padding-top: 32px;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    padding-top: 28px;
+    padding-bottom: 12px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    padding-top: 28px;
+    padding-bottom: 12px;
+  }
+
+  @include min-screen($min-pc-media) {
+    padding-top: 28px;
+    padding-bottom: 12px;
+  }
+}
+
+.footer-widgets-container h2, .footer-widgets-container ul li a {
+  color: $white;
+}
+
+.footer-widgets-container ul li {
+  list-style: none;
+  @include max-screen($max-sm-media) {
+    margin-bottom: 8px;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    margin-bottom: 4px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    margin-bottom: 8px;
+  }
+
+  @include min-screen($min-pc-media) {
+    margin-bottom: 8px;
+  }
+}
+
+.footer_text {
+  color: $white;
+  @include screen($min-tablet-media, $max-tablet-media) {
+    margin-bottom: 0px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    margin-bottom: 0px;
+  }
+
+  @include min-screen($min-pc-media) {
+    margin-bottom: 0px;
+  }
+}
+
+.footer-widget {
+  @include max-screen($max-sm-media) {
+    padding-bottom: 32px;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    padding-bottom: 16px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    padding-bottom: 16px;
+  }
+
+  @include min-screen($min-pc-media) {
+    padding-bottom: 16px;
+  }
+}
+
+.footer-widgets-container h2.footer-widgets-title {
+  @include max-screen($max-sm-media) {
+    font-size: 16px;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    font-size: 20px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    font-size: 20px;
+  }
+
+  @include min-screen($min-pc-media) {
+    font-size: 20px;
+  }
+}
+
+.footer-widgets-container ul {
+  padding-left: 0px;
+}
+
+.footer-widgets-container ul li a {
+  @include max-screen($max-sm-media) {
+    font-size: 14px;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    font-size: 18px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    font-size: 18px;
+  }
+
+  @include min-screen($min-pc-media) {
+    font-size: 18px;
+  }
+}
+
+.footer-widgets-border {
+  margin-top: 8px;
+  @include max-screen($max-sm-media) {
+    margin-bottom: 8px;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    margin-bottom: 16px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    margin-bottom: 16px;
+  }
+
+  @include min-screen($min-pc-media) {
+    margin-bottom: 16px;
+  }
+}
+
+@include screen($min-middle-media, $max-middle-media) {
+  .footer-conta12er {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+}
+
+
+/*フッターウィジェットエリア*/

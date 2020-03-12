@@ -1,0 +1,43 @@
+/*教科書一覧ページ部分*/
+.lesson_docs_title {
+  background-color: $gp-main-color;
+  color: $white;
+  font-weight: bold;
+  margin-top: 48px;
+  margin-bottom: 32px;
+
+  @include max-screen($max-sm-media) {
+    padding: 16px 24px;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    padding: 24px 40px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    padding: 24px 40px;
+  }
+
+  @include min-screen($min-pc-media) {
+    padding: 24px 40px;
+  }
+}
+
+.lesson_docs_title:first-child {
+  margin-top: 0px;
+}
+
+div.dwd_background.mb24 {
+
+  background: $ice-white;
+  color: $black;
+  text-align: left;
+  padding: 15px;
+  border: 1px solid $gray;
+  margin-top: -1px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 24px;
+}
+
+/*教科書一覧ページ部分*/

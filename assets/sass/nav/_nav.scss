@@ -1,0 +1,124 @@
+
+/*ナビゲーションメニュー*/
+#gnavi{
+  background: $gp-main-color;
+}
+.navbar-fixed{
+  @include max-screen( $max-sm-media ) {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+}
+.navbar-toggle{
+  @include max-screen( $max-sm-media ) {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  @include min-screen( $min-pc-media ) {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+}
+.navbar{
+  @include max-screen( $max-sm-media ) {
+    height: 60px;
+    min-height: 40px;
+    width: 100%;
+    margin-bottom: 0px;
+    z-index: 10;
+  }
+}
+
+
+.nav-bar-box{
+  margin: 0 auto;
+  @include min-screen( $min-pc-media ) {
+    width: 1100px;
+  }
+}
+
+.navbar-brand.title{
+  color:$white;
+  font-weight: bold;
+  @include max-screen( $max-sm-media ) {
+    font-size: 18px;
+    padding:16px;
+    height: auto;
+  }
+
+}
+
+
+.navbar-brand.title:hover{
+  color:$gp-main-color;
+  font-weight: bold;
+  background-color: $white;
+}
+
+.border_none{
+  border:none;
+}
+
+.nab-right-menu{
+  list-style: none;
+}
+
+
+.navbar-right-link{
+  color: $white !important;
+}
+
+.navbar-right{
+
+}
+.login{
+  background-color: $green;
+}
+
+.member{
+  background-color: $light-orange;
+}
+
+.navbar-nav li a, .navbar-nav li.menu-item a, ul.nav.navbar-nav li.page_item a{
+  color: $white;
+  font-size: 15px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-radius: 0px;
+}
+
+.navbar-nav li.menu-item a:hover, ul.nav.navbar-nav li.page_item a:hover{
+  color: $gp-main-color;
+}
+
+.navbar-right-items{
+  @include max-screen( $max-sm-media ) {
+    padding: 8px 0px;
+    margin-right: 0px !important;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    margin-right: 0px !important;
+  }
+
+  @include min-screen( $min-pc-media ) {
+    margin-right: 0px !important;
+  }
+}
+
+
+/*ナビゲーションメニュー*/

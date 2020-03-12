@@ -1,0 +1,98 @@
+/*フロントーポスト部分*/
+
+.post-box-title{
+  color: $white;
+  font-weight: bold;
+  @include max-screen( $max-sm-media ) {
+    margin-top: 0px;
+    margin-bottom: 24px;
+    padding: 16px 20px;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    margin-top:0px;
+    margin-bottom:32px;
+    padding:24px 40px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    margin-top:0px;
+    margin-bottom:32px;
+    padding:24px 40px;
+  }
+
+  @include min-screen( $min-pc-media ) {
+    margin-bottom: 32px;
+    padding: 14px 20px;
+    border-radius: 5px;
+  }
+
+}
+
+.single-post-box{
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
+  @include max-screen( $max-sm-media ) {
+    margin-bottom: 16px;
+  }
+}
+
+
+.single-post-title{
+  font-weight: bold;
+  margin-bottom:8px;
+  @include max-screen( $max-sm-media ) {
+    margin-top:16px;
+    font-size:18px;
+  }
+
+}
+
+.single-post-link-text{
+  background-color: $gray-background-color;
+  color: $red-link-text-color;
+  font-weight: bold;
+  padding: 8px 10px;
+  @include max-screen( $max-sm-media ) {
+    font-size:14px;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    font-size:16px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    font-size:16px;
+  }
+
+  @include min-screen( $min-pc-media ) {
+    font-size:14px;
+  }
+}
+
+.single-post-content{
+  background: $white;
+    padding: 16px;
+}
+
+.single-post-text{
+  font-size: 14px;
+  color: $bold-gray;
+
+  @include max-screen( $max-sm-media ) {
+    margin-bottom:16px;
+  }
+
+  @include screen($min-tablet-media, $max-tablet-media) {
+    margin-bottom:8px;
+  }
+
+  @include screen($min-middle-media, $max-middle-media) {
+    margin-bottom:8px;
+  }
+
+  @include min-screen( $min-pc-media ) {
+    margin-bottom:8px;
+  }
+}
+
+/*フロントーポスト部分*/

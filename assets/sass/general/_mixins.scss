@@ -1,0 +1,51 @@
+@mixin max-screen($break-point) {
+  @media screen and (max-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin min-screen($break-point) {
+  @media screen and (min-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin screen($break-point-min, $break-point-max) {
+  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+    @content;
+  }
+}
+
+@mixin webkit-flex(){
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin front-widget-box-style(){
+  padding: 16px;
+  background: $white;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
+  @include max-screen( $max-sm-media ) {
+    margin-bottom: 16px;
+  }
+}
+
+@mixin btn_design() {
+  padding: 10px 40px;
+  border: 1px solid $gp-main-color;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-transition: all 0.218s;
+  -moz-transition: all 0.218s;
+  -webkit-transition: all 0.218s;
+  transition: all 0.218s;
+  background-color: $gp-main-color;
+  color: $white;
+}
+
+@mixin btn_design_hover() {
+  background-color: $white;
+  color: $gp-main-color;
+}
